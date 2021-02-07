@@ -1,0 +1,137 @@
+.frame {
+  width: 100%;
+  height: 300px;
+  border: 2px solid red;
+}
+
+.slidegroup {
+  width: 400%;
+  height: 100%;
+  animation: slide 6s;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+}
+
+.pic1 {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0%;
+  }
+  30% {
+    margin-left: -100%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+
+.slide {
+  width: 25%;
+  height: 100%;
+  float: left;
+  font-size: 60px;
+  text-align: center;
+}
+
+.slide:nth-child(1) {
+  background-color: lightpink;
+}
+
+.slide:nth-child(2) {
+  background-color: lightgreen;
+}
+
+.slide:nth-child(3) {
+  background-color: lightblue;
+}
+
+.slide:nth-child(4) {
+  background-color: lightsalmon;
+}
+
+/*
+.slide1 {
+  background-color: lightpink;
+}
+
+.slide2 {
+  background-color: lightgreen;
+}
+
+.slide3 {
+  background-color: lightseagreen;
+}
+
+.slide4 {
+  background-color: lightsalmon;
+}
+*/
+
+.mainwindow {
+  border: 2px solid red;
+  width: 50%;
+  height: 60%;
+}
+
+.button {
+  background-color: orange;
+  color: white;
+  padding: 4px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.modalwindow {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  background-color: rgba(30, 86, 124, 0.5);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modalwindow:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.msgblock {
+  position: relative;
+  width: 40%;
+  height: 60%;
+  background-color: lightsalmon;
+  margin: auto;
+  margin-top: 10%;
+}
+.msgblock img {
+  width: 50%;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.msgblock h1,
+p {
+  color: white;
+  padding-left: 50px;
+  padding-top: 15px;
+}
+
+.link {
+  background-color: purple;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 4px;
+  padding: 8px;
+  margin-left: 250px;
+  margin-top: 300px;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="..\static\style2.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <h2>Billing Address🚚</h2>
+  <div class="row">
+    <div class="col">
+      <div class="container">
+        <form class="form" action="{{url_for('thankyou')}}" method="POST">
+          <div class="row">
+            <div class="col2">
+              <label>👩First Name</label>
+              <input class="input" type="text" name="first_name" required value="" title=".."
+                placeholder="Please enter your last name"><br>
+
+              <labe>👨Last Name</label>
+              <input class="input" type="text" name="last_name" required value="" title=".."
+                placeholder="Please enter your last name"><br>
+
+              <label> 💌Email</label>
+              <input class="input" type="email" name="email_name" required value="" title=".."
+                placeholder="Please enter your email"><br>
+
+
+              <label>🏠Address</label>
+              <input class="input" type="text" name="address_name" required value="" title=".."
+                placeholder="Ex:13419 15th Avenue"><br>
+
+              <label>City</label>
+              <input class="input" type="text" name="city_name" required value="" title=".."
+                placeholder="Ex:Flushing"><br>
+
+              <div class="row">
+                <div class="col2">
+                  <label>🏛State</label>
+                  <input class="input" type="text" name="state_name" required value="" title=".."
+                    placeholder="Ex:New York"><br>
+                </div>
+                <div class="col2">
+                  <label for="zip">Zip</label>
+                  <input class="input" type="number" name="zip_code" required value="" title=".."
+                    placeholder="Ex: 14577"><br>
+                </div>
+              </div>
+            </div>
+
+            <div class="col2">
+              <h3>Payment</h3>
+              <label for="fname">Accepted Cards💳</label>
+              <div class="icon">
+                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              </div>
+
+              <label for="cname">Country/Region</label>
+              <input class="input" type="text" name="country_name" required value="" title=".."
+                placeholder="Ex: United States"><br>
+
+              <label for="cname">Name on Card</label>
+              <input class="input" type="text" name="card_name" required value="" title=".."
+                placeholder="Ex:John Smith"><br>
+
+              <label for="ccnum">Card number</label>
+              <input class="input" type="text" name="card_number" required value="" title=".."
+                placeholder="Ex:1111-1231-1223-1232"><br>
+
+
+              <div class="row">
+                <div class="col2">
+                  <label for="expmonth">Expire Date</label>
+                  <input class="input" type="text" name="expire_date" required value="" title=".."
+                    placeholder="MM / YYYY">
+                </div>
+
+                <div class="col2">
+                  <label for="cvv">CVV</label>
+                  <input class="input" type="number" name="cvv_number" required value="" title=".."
+                    placeholder="Ex:107">
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <label>
+            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as biling address!</label>
+          <input type="submit" value="Continue checkout" class="btn">
+        </form>
+      </div>
+    </div>
+
+</body>
+
+</html>

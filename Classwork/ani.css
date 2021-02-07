@@ -1,0 +1,28 @@
+.hill{
+    width: 100%;
+    height: 400px;
+    background-image: url("mountain.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hill img{
+    animation-name: move;
+    animation-duration: 10s;
+    animation-delay: 3s;
+    margin-left: 0px;
+    margin-top: 250px;
+}
+
+@keyframes move{
+    0%{margin-left: 0px;margin-top:250px;}
+    100%{margin-left:300px;margin-top:250px;}
+}
+.car{
+    width: 150px;
+    height: 120px;
+    position:absolute;
+    margin-top: 80%;
+    margin-left:60%;
+}
+

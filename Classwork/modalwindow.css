@@ -1,0 +1,233 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.webpage {
+  width: 1000px;
+  height: auto;
+  margin:auto;
+}
+
+.mainwindow {
+  border: 2px solid red;
+  width: 40%;
+  height: 520px;
+  margin-left: 8%;
+  margin-top: 4%;
+}
+
+.snack2 {
+  width: 50%;
+  padding-top: 10%;
+  padding-left: 24%;
+}
+.p1 {
+  color: black;
+  padding-left: 24%;
+  margin-top: 1%;
+}
+
+.button {
+  background-color: orange;
+  color: white;
+  padding: 1%;
+  border-radius: 8px;
+  text-decoration: none;
+  position: absolute;
+  margin-left: 9%;
+}
+
+.button:hover {background-color: #37C891}
+
+.button:active {
+  background-color: #37C891;
+  box-shadow: 0 5px #808080;
+  transform: translateY(4px);
+}
+
+.modalwindow {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  background-color: rgba(15, 99, 155, 0.7);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modalwindow:target {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.msgblock {
+  position: relative;
+  width: 55%;
+  height: 80%;
+  background-color: orange;
+  margin: auto;
+  margin-top: 3%;
+}
+
+.msgblock img {
+  width: 50%;
+  height: 50%;
+  margin-left: 12%;
+  margin-top: -2%;
+}
+
+.msgblock h1 {
+  color: white;
+  background-color: lightpink;
+  padding-left: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.msgblock p {
+  color: black;
+  background-color: lightpink;
+  padding: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 4%;
+  margin-bottom: 8%;
+}
+
+.btn1 {
+  margin-top: -15%;
+  margin-left: 50%;
+}
+.link {
+  background-color: purple;
+  color: cyan;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 2%;
+  margin-left: 70%;
+  border: 1px solid red;
+}
+
+.link:hover {background-color:#5F5F58}
+
+.link:active {
+  background-color: #5F5F58;
+  box-shadow: 0 3px #ebe0e0;
+  transform: translateY(4px);
+}
+
+
+
+/*second modal window*/
+
+.mainwindow1 {
+  border: 2px solid red;
+  width: 40%;
+  height: 520px;
+  margin-left: 54%;
+  margin-top: -52.5%;
+}
+
+.snack {
+  width: 50%;
+  padding-top: 10%;
+  padding-left: 24%;
+}
+
+.p2 {
+  color: black;
+  padding-left: 24%;
+  margin-top: 1%;
+}
+
+.button1 {
+  background-color: orange;
+  color: white;
+  padding: 1%;
+  border-radius: 8px;
+  text-decoration: none;
+  position: absolute;
+  margin-left: 9%;
+}
+
+.button1:hover {background-color: #37C891}
+
+.button1:active {
+  background-color: #37C891;
+  box-shadow: 0 5px #808080;
+  transform: translateY(4px);
+}
+
+.modalwindow1 {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  background-color: rgba(87, 163, 57, 0.8);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modalwindow1:target {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.msgblock1 {
+  position: relative;
+  width: 55%;
+  height: 80%;
+  background-color: rgba(177, 214, 238, 0.7);
+  margin: auto;
+  margin-top: 3%;
+}
+
+.msgblock1 img {
+  width: 50%;
+  height: 50%;
+  margin-left: 12%;
+  margin-top: -2%;
+}
+
+.msgblock1 h1 {
+  color: white;
+  background-color: lightpink;
+  padding-left: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.msgblock1 p {
+  color: black;
+  background-color: lightpink;
+  padding: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 6%;
+  margin-bottom: 8%;
+}
+
+.btn2 {
+  margin-top: -9%;
+}
+
+.link1 {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 0.3%;
+  margin-left: 97.5%;
+  border: 1px solid #c98c8c;
+}
+
+.link1:hover {background-color: #C3EADB}
+
+.link1:active {
+  background-color:#C3EADB;
+  box-shadow: 0 3px #7E8784;
+  transform: translateY(4px);
+}

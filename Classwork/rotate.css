@@ -1,0 +1,22 @@
+.hill{
+    width: 100%;
+    height: 400px;
+    background-image: url(mountain.jpg);
+    background-repeat: no-repeat;
+}
+
+.hill img{
+    animation-name: move;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    margin-left: 0px;
+    margin-top: 250px;
+   
+}
+
+@keyframes move{
+    0%{transform: translateX();
+    }
+    100%{transform: rotate(180deg);
+    }
+}

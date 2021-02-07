@@ -1,0 +1,52 @@
+.clock{
+    width: 100%;
+    height:440px;
+    background-image: url("pinkbg.jpg");
+    background-size: 440px 600px;
+    background-repeat: no-repeat;   
+}
+
+.layout{
+    width: 30%;
+    height:30%;
+    padding:1.5%;
+    position: relative;
+    border-radius: 20px;
+}
+
+.hours{
+    width: 8%;
+    height: 60px;
+    position:fixed;
+    margin-top: -255px;
+    margin-left: 218px;
+    animation-name: rotate;
+    animation-duration: 10s;
+    transform-origin: left;
+    animation-fill-mode: forwards;
+}
+
+.minutehand{
+    transform: rotate(-90deg);
+}
+.minutes{
+    width: 144px;
+    height: 60px;
+    position:fixed;
+    margin-top: -476px;
+    margin-left: 891px;
+    transform-origin: left;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move{
+    100%{transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate{
+    100%{transform: rotate(30deg);
+    }
+}
